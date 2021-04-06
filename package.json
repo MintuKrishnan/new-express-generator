@@ -1,0 +1,33 @@
+{
+  "name": "new-express-generator",
+  "version": "1.0.2",
+  "description": "express generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "express",
+    "express-generator",
+    "node-template",
+    "framework",
+    "sinatra",
+    "web",
+    "rest",
+    "restful",
+    "router",
+    "app",
+    "api"],
+  "author": "Mintu Krishnan",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mintu-krishnan-au13/new-express-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mintu-krishnan-au13/new-express-generator/issues"
+  },
+  "homepage": "https://github.com/mintu-krishnan-au13/new-express-generator#readme"
+}
