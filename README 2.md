@@ -1,5 +1,3 @@
-# new-express-generator
-
 [![Express Logo](https://i.cloudup.com/zfY6lL7eFa-3000x3000.png)](http://expressjs.com/)
 
 [Express'](https://www.npmjs.com/package/express) application generator.
@@ -12,7 +10,7 @@
 ## Installation
 
 ```sh
-$ npm install -g new-express-generator
+$ npm install -g express-generator
 ```
 
 ## Quick Start

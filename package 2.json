@@ -1,19 +1,18 @@
 {
-  "name": "new-express-generator",
-  "version": "1.0.3",
-  "description": "express generator",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint .",
-    "test": "mocha --reporter spec --bail --check-leaks test/",
-    "test-ci": "mocha --reporter spec --check-leaks test/"
-  },
+  "name": "express-generator",
+  "description": "Express' application generator",
+  "version": "4.16.1",
+  "author": "TJ Holowaychuk <tj@vision-media.ca>",
+  "contributors": [
+    "Aaron Heckmann <aaron.heckmann+github@gmail.com>",
+    "Ciaran Jessup <ciaranj@gmail.com>",
+    "Douglas Christopher Wilson <doug@somethingdoug.com>",
+    "Guillermo Rauch <rauchg@gmail.com>",
+    "Jonathan Ong <me@jongleberry.com>",
+    "Roman Shtylman <shtylman+expressjs@gmail.com>"
+  ],
   "keywords": [
-    "node",
-    "npm",
     "express",
-    "express-generator",
-    "node-template",
     "framework",
     "sinatra",
     "web",
@@ -23,16 +22,8 @@
     "app",
     "api"
   ],
-  "author": "Mintu Krishnan",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mintu-krishnan-au13/new-express-generator.git"
-  },
-  "bugs": {
-    "url": "https://github.com/mintu-krishnan-au13/new-express-generator/issues"
-  },
-  "homepage": "https://github.com/mintu-krishnan-au13/new-express-generator#readme",
+  "repository": "expressjs/generator",
+  "license": "MIT",
   "dependencies": {
     "commander": "2.15.1",
     "ejs": "2.6.1",
@@ -40,6 +31,7 @@
     "mkdirp": "0.5.1",
     "sorted-object": "2.0.1"
   },
+  "main": "bin/express-cli.js",
   "preferGlobal": true,
   "bin": {
     "express": "./bin/express-cli.js"
@@ -59,11 +51,16 @@
     "validate-npm-package-name": "3.0.0"
   },
   "engines": {
-    "node": ">= 0.14"
+    "node": ">= 0.10"
   },
   "files": [
     "LICENSE",
     "bin/",
     "templates/"
-  ]
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha --reporter spec --bail --check-leaks test/",
+    "test-ci": "mocha --reporter spec --check-leaks test/"
+  }
 }
