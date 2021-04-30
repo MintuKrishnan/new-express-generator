@@ -190,7 +190,7 @@ describe('express(1)', function () {
     it('should print usage', function (done) {
       runRaw(ctx.dir, ['--foo'], function (err, code, stdout, stderr) {
         if (err) return done(err);
-        assert.ok(/Usage: express /.test(stdout));
+        assert.ok(/Usage: new-express /.test(stdout));
         assert.ok(/--help/.test(stdout));
         assert.ok(/--version/.test(stdout));
         assert.ok(/error: unknown option/.test(stderr));
@@ -261,7 +261,7 @@ describe('express(1)', function () {
       it('should print usage', function (done) {
         runRaw(ctx.dir, ['--css'], function (err, code, stdout) {
           if (err) return done(err);
-          assert.ok(/Usage: express /.test(stdout));
+          assert.ok(/Usage: new-express /.test(stdout));
           assert.ok(/--help/.test(stdout));
           assert.ok(/--version/.test(stdout));
           done();
@@ -591,7 +591,7 @@ describe('express(1)', function () {
         if (err) return done(err);
         var files = utils.parseCreatedFiles(stdout, ctx.dir);
         assert.strictEqual(files.length, 0);
-        assert.ok(/Usage: express /.test(stdout));
+        assert.ok(/Usage: new-express /.test(stdout));
         assert.ok(/--help/.test(stdout));
         assert.ok(/--version/.test(stdout));
         done();
@@ -639,7 +639,7 @@ describe('express(1)', function () {
         if (err) return done(err);
         var files = utils.parseCreatedFiles(stdout, ctx.dir);
         assert.strictEqual(files.length, 0);
-        assert.ok(/Usage: express /.test(stdout));
+        assert.ok(/Usage: new-express /.test(stdout));
         assert.ok(/--help/.test(stdout));
         assert.ok(/--version/.test(stdout));
         done();
@@ -781,7 +781,7 @@ describe('express(1)', function () {
       it('should print usage', function (done) {
         runRaw(ctx.dir, ['--view'], function (err, code, stdout) {
           if (err) return done(err);
-          assert.ok(/Usage: express /.test(stdout));
+          assert.ok(/Usage: new-express /.test(stdout));
           assert.ok(/--help/.test(stdout));
           assert.ok(/--version/.test(stdout));
           done();
