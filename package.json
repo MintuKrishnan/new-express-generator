@@ -1,6 +1,6 @@
 {
   "name": "new-express-generator",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "express generator",
   "main": "index.js",
   "scripts": {
@@ -59,7 +59,7 @@
     "validate-npm-package-name": "3.0.0"
   },
   "engines": {
-    "node": ">= 0.14"
+    "node": ">= 14.0"
   },
   "files": [
     "LICENSE",
