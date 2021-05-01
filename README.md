@@ -22,7 +22,7 @@ The quickest way to get started with express is to utilize the executable `expre
 Create the app:
 
 ```bash
-$ new-express --view=hbs /tmp/foo && cd /tmp/foo
+$ npx new-express-generator folder-name
 ```
 
 Install dependencies:

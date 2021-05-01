@@ -362,6 +362,7 @@ function createApplication(name, dir) {
   var prompt = launchedFromCmd() ? '>' : '$';
 
   if (dir !== '.') {
+    console.log(' new express package generated successfully ');
     console.log();
     console.log('   change directory:');
     console.log('     %s cd %s', prompt, dir);
